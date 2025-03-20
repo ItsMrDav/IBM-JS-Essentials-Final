@@ -35,7 +35,7 @@ textarea {
 /* *********************************************************************************/
 header {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 nav {
   width: 100vw;
@@ -79,6 +79,8 @@ nav {
     gap: 1rem;
   }
   & #nav-search input[type="text"] {
+    color: var(--primary);
+    outline: none;
     padding: 0.8rem;
     border: none;
     width: 25rem;
@@ -103,21 +105,42 @@ nav {
 
 #hero {
   width: 100vw;
-  height: 90vh;
+  min-height: 90vh;
   padding: 10rem;
   display: flex;
   gap: 5rem;
-  flex-direction: column;
-  background-image: url(https://plus.unsplash.com/premium_photo-1661911532218-9ffdaf19aafc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-image: url(https://images.unsplash.com/photo-1627140583146-23077865a2a8?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: 100% 100%;
   background-position: center;
+  & #intro {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  & #results-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(--secondary);
+    & img {
+      width: 100%;
+      border-radius: 1rem;
+    }
+    & h3,
+    p,
+    span {
+      font-size: 1.5rem;
+      color: var(--text-dark);
+    }
+  }
   & h1 span {
     display: block;
     font-size: 7rem;
     text-transform: uppercase;
     color: var(--text-dark);
   }
-  & p {
+  & #intro p {
     width: 30rem;
     padding: 1rem;
     font-size: 1.5rem;
