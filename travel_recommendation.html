@@ -4,9 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IBM JS Essentials Final</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="travel_recommendation.js" defer></script>
   </head>
   <body>
-    <h1>hey</h1>
+    <header>
+      <nav>
+        <div id="nav-logo">Travel World</div>
+        <div id="nav-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div id="nav-search">
+          <form action="">
+            <input type="text" placeholder="Enter a destination or keyword" />
+            <button type="submit">Search</button>
+            <button>Clear</button>
+          </form>
+        </div>
+      </nav>
+      <section id="hero">
+        <h1><span>explore</span><span>dream</span><span>discover</span></h1>
+        <p>
+          Embark on your next adventure with ease! Whether you're planning a
+          relaxing gateaway, a thrilling adventure, or a business trip, we make
+          booking seamless and stress-free. Find best destinations, unbeatable
+          deals, and personalized travel experiences-all in one place. Your
+          journey.
+        </p>
+        <button>book now</button>
+      </section>
+    </header>
+    <main>
+      <section id="about">
+        <h2>about us</h2>
+        <p>
+          At Travel World, we believe that travel should be effortless,
+          exciting, and tailored to you. As a trusted online travel agency, we
+          connect you with the best destinations, unbeatable deals, and seamless
+          booking experiences—all in one place. Whether you're dreaming of a
+          tropical escape, a cultural adventure, or a business trip, our expert
+          team ensures hassle-free planning and personalized itineraries. With
+          secure bookings, 24/7 support, and exclusive offers, your journey
+          starts with confidence. Let's turn your travel dreams into
+          reality—because the world is waiting!
+        </p>
+        <div id="team">
+          <h2><span>Our</span><span>Team</span></h2>
+          <div>
+            <p>Olivia Carter</p>
+            <p>
+              Visionary leader driving innovation, strategy, and growth to take
+              the company to new heights.
+            </p>
+            <p>CEO</p>
+          </div>
+          <div>
+            <p>James Bennett</p>
+            <p>
+              Guides and empowers the team, ensuring collaboration and
+              efficiency to deliver top-notch solutions.
+            </p>
+            <p>Team Lead</p>
+          </div>
+          <div>
+            <p>Sophia Ramirez</p>
+            <p>
+              Oversees project execution, ensuring timely and high-quality
+              deliveries that exceed expectations.
+            </p>
+            <p>Delivery Lead</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="contact">
+      <div>
+        <h2>contact us</h2>
+        <p>Get in touch</p>
+      </div>
+      <form action="">
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+        <label for="email">Name</label>
+        <input type="text" id="email" />
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="6"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </footer>
   </body>
 </html>
